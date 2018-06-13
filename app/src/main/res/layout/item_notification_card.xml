@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:layout_marginBottom="20dp"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:id="@+id/notifyLayout"
+        android:layout_height="60dp"
+        android:background="@drawable/white_circle_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/notifyLogo"
+            android:layout_width="26dp"
+            android:layout_height="41dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/trending"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/dummyIV"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/notifyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:clipToPadding="false"
+        android:paddingBottom="5dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            app:smart_font="fonts/Ubuntu-B.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/titleNotification"
+            android:textColor="@color/red"
+            android:text="FIRE SALE IS ON NOW"
+            android:gravity="start"
+            android:layout_marginLeft="5dp"
+            />
+
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            app:smart_font="fonts/Ubuntu-R.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/notifyMeBtn"
+            android:textColor="@color/red"
+            android:text="Notify me"
+            android:elevation="5dp"
+            android:gravity="start"
+            android:background="@drawable/notification_button_bg"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

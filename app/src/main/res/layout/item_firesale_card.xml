@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"
+        android:id="@+id/fireSaleHeader">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/lunch"
+            android:id="@+id/fireSaleIV"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/dummyIV"
+            android:visibility="invisible"
+            />
+
+       <!-- <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="35dp"
+            android:clipToPadding="false"
+            android:paddingBottom="10dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                app:backgroundTint="@color/white"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/trending"
+                android:id="@+id/firesaleLogo" />
+        </FrameLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/trending"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            android:background="@drawable/white_circle_bg"
+            />-->
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/white_circle_bg"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/firesaleLogo"
+                android:layout_width="26dp"
+                android:layout_height="41dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/trending"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-B.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/titleFireSale"
+        android:textColor="@color/red"
+        android:text="FIRE SALE ON NOW!"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-R.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/descFireSale"
+        android:textColor="@color/search_tab_text"
+        android:text="50% and more off  from Pizza Hut, Pista House,Bawarchi and more!"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-B.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/listHeaderFireSale"
+        android:textColor="@color/firesale_list_header"
+        android:text="Last few dishes left, grab your favourites"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/firesaleRcv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+    <fr.arnaudguyon.smartfontslib.FontButton
+        android:id="@+id/showAllFiresaleBtn"
+        app:smart_font="fonts/Ubuntu-B.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/show_all_btn_bg"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="12sp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="SHOW ALL"/>
+
+</LinearLayout>

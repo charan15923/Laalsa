@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Laalsa</string>
+
+    <string name="maps_api_key">AIzaSyBcejF8WMvHweGcHq67RY3TlUtD4UyLolc</string>
+
+
+    <string-array name="preferences_aray">
+        <item>an Adventurer</item>
+        <item>a Musician</item>
+        <item>a Designer</item>
+        <item>a Businessman</item>
+        <item>an Entrepreneur</item>
+    </string-array>
+
+    <string-array name="location_array">
+        <item>Madhapur</item>
+        <item>Kondapur</item>
+        <item>Hitex</item>
+        <item>Gachibowli</item>
+        <item>Banjara Hills</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="rupee">`</string>
+    <string name="res">\u20B9</string>
+
+    <string name="no_image">https://s3.ap-south-1.amazonaws.com/laalsaimage/mastermenu/noimage.png</string>
+    <string name="no_image_two">https://s3.ap-south-1.amazonaws.com/laalsaimage/mastermenu/10039_thumb.png</string>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient_bg"
+    tools:context=".SplashActivity">
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-BI.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LAALSA"
+        android:textSize="30sp"
+        android:id="@+id/logo"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"
+        android:id="@+id/logoIV"/>
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Crave excellence!"
+        android:textSize="16sp"
+        android:layout_below="@+id/logoIV"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

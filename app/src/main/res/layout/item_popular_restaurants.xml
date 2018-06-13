@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/restaurantLogo"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:elevation="10dp"
+        android:background="@drawable/white_circle_bg"
+        android:src="@drawable/fb"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="166dp"
+        xmlns:card_view="http://schemas.android.com/tools"
+        app:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardUseCompatPadding="true"
+        android:clipToPadding="false"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="32.5dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/restaurantIV"
+                android:src="@drawable/noodles"/>
+
+            <LinearLayout
+                android:layout_below="@+id/restaurantIV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+
+                    <fr.arnaudguyon.smartfontslib.FontTextView
+                        app:smart_font="fonts/Ubuntu-M.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:id="@+id/restaurant"
+                        android:textColor="@color/item_header_color"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:minHeight="30dp"
+                        android:ellipsize="end"
+                        android:layout_marginLeft="10dp"
+                        android:text="Pista House"
+                        />
+
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/area"
+                    android:text="Banjara Hills"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/search_tab_text"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp">
+
+
+
+                    <fr.arnaudguyon.smartfontslib.FontTextView
+                        app:smart_font="fonts/Ubuntu-M.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:id="@+id/cuisine"
+                        android:textColor="@color/black_variant"
+                        android:text="Mughlai, Chinese"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <fr.arnaudguyon.smartfontslib.FontTextView
+                        app:smart_font="fonts/Ubuntu-R.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textColor="@color/closes_text_color"
+                        android:id="@+id/closesInfoTV"
+                        android:text="Closes in 2 hours"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content">
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:rating="3.1"
+                        android:stepSize="0.1"
+                        android:id="@+id/restaurantRating"
+                        android:isIndicator="true"
+                        style="@style/Base.Widget.AppCompat.RatingBar.Small"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

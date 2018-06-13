@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:background="@color/black_opacity"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/tabsLayout"
+        android:background="@color/red">
+
+
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            app:smart_font="fonts/Ubuntu-B.ttf"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SORT"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/sortTab"
+            android:paddingTop="35dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            />
+
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            app:smart_font="fonts/Ubuntu-R.ttf"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="FILTER"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:id="@+id/filterTab"
+            android:paddingTop="35dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/tabsLayoutBorder"
+        android:background="@drawable/splash_gradient_bg">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/sortBorder"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/filterBorder"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        app:cardElevation="20dp"
+        android:elevation="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/splash_gradient_bg"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/sortLayout">
+
+                <include layout="@layout/snippet_sort_list"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/filterLayout">
+
+                <include layout="@layout/snippet_filter_list"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/close"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_close"/>
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    app:smart_font="fonts/Ubuntu-B.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DONE"
+                    android:layout_centerInParent="true"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:id="@+id/done"
+                    android:textColor="@color/white"
+                    />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/refresh"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_refresh"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</LinearLayout>

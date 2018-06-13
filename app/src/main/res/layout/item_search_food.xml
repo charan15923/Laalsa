@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/nearYou"
+            android:orientation="vertical">
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:id="@+id/foodTitle"
+                android:textColor="@color/black_variant_two"
+                android:layout_centerVertical="true"
+                android:text="Biryani"
+                android:gravity="center"
+                />
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:id="@+id/restaurantsNumber"
+                android:textColor="@color/search_tab_text"
+                android:layout_centerVertical="true"
+                android:text="100 Restaurants"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                />
+
+        </LinearLayout>
+
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            app:smart_font="fonts/Ubuntu-M.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:id="@+id/nearYou"
+            android:textColor="@color/search_tab_text"
+            android:layout_centerVertical="true"
+            android:text="10 near you"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+</LinearLayout>

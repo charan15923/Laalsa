@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_gradient_bg"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.SignupActivity">
+
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="Skip"
+        android:id="@+id/skipButton"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@color/white_opacity"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/skipButton"
+        android:id="@+id/logoIV"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_above="@+id/enjoyLaalsa"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"><requestFocus/></View>
+
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Laalsa wants to know you better"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp">
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="You are"
+                    android:textSize="36sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    />
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    android:layout_gravity="center_vertical"
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="36sp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:id="@+id/userName"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    android:hint="Name      "/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <Spinner
+                    android:layout_centerVertical="true"
+                    android:id="@+id/prefSpinner"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    style="@style/SpinnerPreferences"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="who"
+                    android:textSize="36sp"
+                    android:id="@+id/whoTV"
+                    android:layout_toRightOf="@+id/prefSpinner"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="loves"
+                    android:id="@+id/lovesTV"
+                    android:textSize="36sp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    />
+
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    android:layout_gravity="center_vertical"
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="36sp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxLength="11"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/favDish"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    android:hint="Dish     "/>
+
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:layout_centerVertical="true"
+                    android:text="on a"
+                    android:layout_alignParentRight="true"
+                    android:textSize="36sp"
+                    android:id="@+id/onTv"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp">
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="night"
+                    android:textSize="36sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    />
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    android:layout_gravity="center_vertical"
+                    app:smart_font="fonts/Ubuntu-R.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="text"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:textSize="36sp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:id="@+id/withGroup"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    android:hint="with friends"/>
+
+                 </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enjoy Laalsa!"
+        android:id="@+id/enjoyLaalsa"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>

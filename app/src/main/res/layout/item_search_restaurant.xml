@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="38dp"
+            android:layout_height="29dp"
+            xmlns:card_view="http://schemas.android.com/tools"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardElevation="5dp"
+            app:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true"
+            android:clipToPadding="false"
+            app:cardElevation="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageLayout"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:id="@+id/restaurantLogo"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/noodles"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/deliveryLayout"
+            android:layout_toRightOf="@+id/imageLayout"
+            android:orientation="vertical">
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="14sp"
+                android:id="@+id/restaurantTitle"
+                android:textColor="@color/black_variant_two"
+                android:layout_centerVertical="true"
+                android:text="Pista House, Banjara Hills"
+                android:gravity="center"
+                />
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-R.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:id="@+id/knownFor"
+                android:textColor="@color/search_tab_text"
+                android:layout_centerVertical="true"
+                android:text="Known for Biryani, Chicken Masala"
+                android:gravity="center"
+                android:layout_marginTop="7dp"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/deliveryLayout"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="9sp"
+                android:textColor="@color/search_tab_text"
+                android:layout_centerVertical="true"
+                android:text="Estimated delivery in"
+                android:gravity="center"
+                />
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:id="@+id/deliveryTime"
+                android:textColor="@color/search_tab_text"
+                android:layout_centerVertical="true"
+                android:text="30 min"
+                android:gravity="end
+"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="9sp"
+        android:id="@+id/closedStatus"
+        android:textColor="@color/restaurant_closed"
+        android:layout_centerVertical="true"
+        android:text="Closed"
+        android:gravity="center"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="15dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"/>
+
+</LinearLayout>

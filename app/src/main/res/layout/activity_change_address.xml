@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/home_fragment_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/search_bg"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+             <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.cronlogy.charan.laalsa.Maps.CustomMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <include
+                    android:id="@+id/marker_view_incl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/marker_view" />
+
+                <include
+                    android:id="@+id/location_display_incl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="7dp"
+                    android:visibility="invisible"
+                    layout="@layout/location_display_view" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_back_arrow"
+                        android:id="@+id/backArrow"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/myLocationLayout"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/white_circle_bg">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_spot_my_location"
+                            android:layout_gravity="center"
+                            android:layout_centerInParent="true"
+                            />
+
+                    </RelativeLayout>
+
+
+</RelativeLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            app:smart_font="fonts/Ubuntu-R.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black_variant_two"
+            android:text="Set a delivery address"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/locationWrapper"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <fr.arnaudguyon.smartfontslib.FontEditText
+                app:smart_font="fonts/Ubuntu-R.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/item_header_color"
+                android:textColorHint="@color/white_opacity"
+                android:inputType="textPostalAddress"
+                android:id="@+id/location"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:hint="Location"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_address_screen"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/flatWrapper"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <fr.arnaudguyon.smartfontslib.FontEditText
+                app:smart_font="fonts/Ubuntu-R.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/item_header_color"
+                android:textColorHint="@color/white_opacity"
+                android:inputType="textPostalAddress"
+                android:id="@+id/flat"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:hint="House / Flat no."/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_address_screen"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/landMarkWrapper"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+            android:layout_height="wrap_content">
+
+            <fr.arnaudguyon.smartfontslib.FontEditText
+                app:smart_font="fonts/Ubuntu-R.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/item_header_color"
+                android:textColorHint="@color/white_opacity"
+                android:inputType="textPostalAddress"
+                android:id="@+id/landMark"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="14sp"
+                android:background="@android:color/transparent"
+                android:hint="Landark"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_address_screen"/>
+
+
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            app:smart_font="fonts/Ubuntu-R.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/black_variant_two"
+            android:text="Tag this location as"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/addressTagsRcv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_address_screen"/>
+
+     </LinearLayout>
+
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="10dp"
+             android:background="@android:color/transparent"/>
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:background="@color/divider_address_screen"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white">
+
+
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/white"
+             android:padding="10dp"
+             android:id="@+id/savedAddressLayout"
+             android:orientation="vertical">
+
+             <fr.arnaudguyon.smartfontslib.FontTextView
+                 app:smart_font="fonts/Ubuntu-R.ttf"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="16sp"
+                 android:textColor="@color/black_variant_two"
+                 android:text="Saved Addresses"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="15dp"
+                 android:layout_centerVertical="true"
+                 />
+
+             <ImageView
+                 android:layout_width="16dp"
+                 android:layout_height="16dp"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/ic_drop_down"
+                 android:id="@+id/addressTagDropdown"/>
+
+         </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_address_screen"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="15dp"
+                android:id="@+id/savedAddressRcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

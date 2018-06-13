@@ -1,0 +1,180 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:elevation="20dp"
+        app:elevation="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash_gradient_bg"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileToolBar">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    ><requestFocus/></View>
+
+                <RelativeLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_filter"
+                        android:id="@+id/filterIV"
+                        android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+
+
+                //tabs
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <fr.arnaudguyon.smartfontslib.FontTextView
+                        app:smart_font="fonts/Ubuntu-R.ttf"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/foodExlporeTab"
+                        android:text="Food"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:textColor="@color/white_opacity"
+
+                        />
+
+                    <fr.arnaudguyon.smartfontslib.FontTextView
+                        app:smart_font="fonts/Ubuntu-B.ttf"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/restaurantExlporeTab"
+                        android:text="Restaurants"
+                        android:textSize="24sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+
+                        />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/locationLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:padding="3dp"
+                        android:id="@+id/searchLayout"
+                        android:background="@drawable/search_bg_toolbar"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_search_toolbar"
+                            android:alpha="0.5"/>
+
+
+                        <fr.arnaudguyon.smartfontslib.FontEditText
+                            android:layout_gravity="center_vertical"
+                            app:smart_font="fonts/Ubuntu-R.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:hint="Eg. Biryani, Tacos, Pizza..."
+                            android:textColorHint="@color/search_hint"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/searchEditText"
+                            android:textColor="@color/white"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/locationLayout"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:layout_centerVertical="true"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:visibility="invisible"
+                            style="@style/SpinnerLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/locationSpinner"></Spinner>
+
+                        <fr.arnaudguyon.smartfontslib.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/locationTV"
+                            app:smart_font="fonts/Ubuntu-M.ttf"
+                            android:text="Hitech City"
+                            android:textSize="16sp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/white"
+                            />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/dropDownIV"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/locationTV"
+                            android:layout_marginLeft="3dp"
+                            android:src="@drawable/ic_dropdown"/>
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+</merge>

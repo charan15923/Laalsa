@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_gradient_bg"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.SignupActivity">
+
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="Skip"
+        android:id="@+id/skipButton"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@color/white_opacity"
+        />
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skipButton"
+        android:layout_above="@+id/continueBtn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-BI.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="LAALSA"
+                android:textSize="30sp"
+                android:id="@+id/logo"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/logoIV"/>
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign up with your mobile number"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+            <fr.arnaudguyon.smartfontslib.FontEditText
+                app:smart_font="fonts/Ubuntu-L.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_opacity"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:id="@+id/mobileNumber"
+                android:background="@drawable/white_opacity_bottom_border"
+                android:hint="Mobile Number"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Continue"
+        android:id="@+id/continueBtn"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>

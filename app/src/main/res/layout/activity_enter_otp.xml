@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/splash_gradient_bg"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.SignupActivity">
+
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="Skip"
+        android:id="@+id/skipButton"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@color/white_opacity"
+        />
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/skipButton"
+        android:layout_above="@+id/didntotp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-BI.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="LAALSA"
+                android:textSize="30sp"
+                android:id="@+id/logo"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"><requestFocus/></View>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:id="@+id/logoIV"/>
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Enter OTP"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="We have sent an access code to you"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="6"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    app:smart_font="fonts/Ubuntu-B.ttf"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="number"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/otpDigitOne"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    />
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    app:smart_font="fonts/Ubuntu-B.ttf"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="number"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/otpDigitTwo"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    />
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    app:smart_font="fonts/Ubuntu-B.ttf"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="number"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/otpDigitThree"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    />
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    app:smart_font="fonts/Ubuntu-B.ttf"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="number"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/otpDigitFour"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    />
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    app:smart_font="fonts/Ubuntu-B.ttf"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="number"
+                    android:layout_marginRight="5dp"
+                    android:maxLength="1"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:id="@+id/otpDigitFive"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    />
+
+
+
+
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    app:smart_font="fonts/Ubuntu-B.ttf"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_opacity"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:id="@+id/otpDigitSix"
+                    android:background="@drawable/white_opacity_bottom_border"
+                    />
+
+
+            </LinearLayout>
+
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                app:smart_font="fonts/Ubuntu-M.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Continue"
+                android:id="@+id/continueBtn"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="90dp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Didn’t receive the code yet?"
+        android:textSize="16sp"
+        android:id="@+id/didntotp"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/resendOtp"
+        android:textColor="@color/white_opacity"
+        />
+
+    <fr.arnaudguyon.smartfontslib.FontTextView
+        app:smart_font="fonts/Ubuntu-M.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Send again"
+        android:id="@+id/resendOtp"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
